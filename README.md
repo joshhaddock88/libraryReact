@@ -1,51 +1,78 @@
-# Getting Started with Create React App
+# Personal Library
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> A personal digital library where users can keep track of their books. Users will be able to add books to their library, as well as various information about their books (ie ratings, whether it is started, finished, similar books etc)
+> Live demo [NA](). <!-- If you have the project hosted somewhere, include the link here. -->
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+* [General Info](#general-information)
+* [Technologies Used](#technologies-used)
+* [Features](#features)
+* [Screenshots](#screenshots)
+* [Setup](#setup)
+* [Usage](#usage)
+* [Project Status](#project-status)
+* [Room for Improvement](#room-for-improvement)
+* [Acknowledgements](#acknowledgements)
+* [Contact](#contact)
+* [License](#license)
 
-### `npm start`
+## General Information
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* Users will be able to add books to their digital library.
+* Allows user to keep track of all their books: which they've read, whether books have been lents out, how much did the user enjoy the book etc etc.
+* Purpose of the project is simply to practice React and basic database building.
+* Almost entirely for fun.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+* React
+* Bootstrap
+* Node
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
 
-### `npm run build`
+* Add Books to library
+* Create sections to group books within your library, including a "to giveaway" section.
+* Group books by genre, rating, etc.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Screenshots
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Example screenshot](./img/screenshot.png)
+<!-- If you have screenshots you'd like to share, include them here. -->
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Setup
 
-### `npm run eject`
+To run locally:
+Clone repository.
+npm install
+npm install react-bootstrap
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Usage
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+A user can either run the application locally or via the beployed site.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Project Status
 
-## Learn More
+Project is: _in progress_
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Room for Improvement
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Room for improvement:
 
-### Code Splitting
+To do:
+
+## Acknowledgements
+
+## Contact
+
+Created by [Joshua Haddock](https://www.linkedin.com/in/joshuahaddock/) - feel free to contact me!
+
+## License
+
+This project is open source and available under the [MIT License](./LICENSE).
+
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
