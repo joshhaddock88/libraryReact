@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button } from 'react-bootstrap';
+import { Button, Form } from 'react-bootstrap';
 
 class AddBook extends Component {
     state = {
@@ -11,7 +11,7 @@ class AddBook extends Component {
 
     handleChange = (e) => {
         this.setState({
-            [e.target.id]: e.target.value
+            [e.target.type]: e.target.value
         })
     }
 
@@ -24,17 +24,32 @@ class AddBook extends Component {
     render(){
         return(
             <div>
-                <form onSubmit={this.handleSubmit}>
-                    <label htmlFor="title">Title:</label>
-                    <input type="text" id="title" onChange={this.handleChange}/>
-                    <label htmlFor="author">Author:</label>
-                    <input type="text" id="author" onChange={this.handleChange}/>
-                    <label htmlFor="pages">Pages:</label>
-                    <input type="text" id="pages" onChange={this.handleChange}/>
-                    <label htmlFor="haveRead">Have you read it?:</label>
-                    <input type="text" id="haveRead" onChange={this.handleChange}/>
-                    <Button>Submit</Button>
-                </form>
+                <Form onSubmit={this.handleSubmit}>
+                    <Form.Group>
+                        <Form.Label>Title</Form.Label>
+                        <Form.Control type="title" placeholder="Enter title"/>
+                    </Form.Group>
+                    
+                    <Form.Group>
+                        <Form.Label>Author</Form.Label>
+                        <Form.Control type="author" placeholder="Enter author"/>
+                    </Form.Group>
+
+                    <Form.Group>
+                        <Form.Label>Pages</Form.Label>
+                        <Form.Control type="pages" placeholder="Enter number of pages"/>
+                    </Form.Group>
+
+                    <Form.Group>
+                        <Form.Label>Read</Form.Label>
+                        <Form.Control type="haveRead" placeholder="Have you read this?"/>
+                    </Form.Group>
+
+                    <Button variant="primary" type="submit">
+                        Submit
+                    </Button>
+
+                </Form>
             </div>
         )
     }
