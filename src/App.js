@@ -1,16 +1,15 @@
 import './App.css';
 import React, { Component } from 'react';
 import Books from './components/Books.js';
-import AddBooks from './components/AddBooks.js';
+import AddBook from './components/AddBook.js';
 
 class App extends Component{
   state = {
-    books: [
-      {title: 'Moby Dick', author: 'Herman Melville', pages: 850, haveRead: 'Yes'}
-    ]
+    books: []
   }
 
   addBook = (book) => {
+    book.id = Math.random();
     let books = [...this.state.books, book]
     this.setState({
       books: books
@@ -21,10 +20,8 @@ class App extends Component{
     return(
       <div className="App">
         <h1>Library!</h1>
-        <Books
-          books={this.state.books}
-        />
-        <AddBooks addBook={this.addBook}/>
+        <Books books={this.state.books}/>
+        <AddBook addBook={this.addBook}/>
       </div>
     );
   }

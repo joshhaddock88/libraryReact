@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Button } from 'react-bootstrap';
 
-class AddBooks extends Component {
+class AddBook extends Component {
     state = {
         title: null,
         author: null,
@@ -18,6 +18,7 @@ class AddBooks extends Component {
     handleSubmit = (e) => {
         e.preventDefault();
         this.props.addBook(this.state);
+        console.log("You pressed Submit");
     }
 
     render(){
@@ -39,4 +40,4 @@ class AddBooks extends Component {
     }
 }
 
-export default AddBooks;
+export default AddBook;
